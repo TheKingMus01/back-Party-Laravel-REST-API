@@ -110,6 +110,8 @@ Route::get('last/getClientId', 'App\Http\Controllers\ClientController@getClientI
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // Get all Orchestres
 Route::get('orchestres', 'App\Http\Controllers\OrchestreController@getOrchestre');
+// Get basic Orchestres
+Route::get('basic_orc', 'App\Http\Controllers\OrchestreController@get_basic_Orchestre');
 // Add Orchestre
 Route::post('addOrchestre', 'App\Http\Controllers\OrchestreController@addOrchestre');
 
