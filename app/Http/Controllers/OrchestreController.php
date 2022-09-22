@@ -18,10 +18,7 @@ class OrchestreController extends Controller
         return response()->json($orchestre::find($id), 200);
     }
      public function get_basic_Orchestre() {
-        $orchestre = Orchestre::find('Basic');
-        if(is_null($orchestre)) {
-            return response()->json(['message' => 'Orchestre Not Found'], 404);
-        }
+        $orchestre = Orchestre::where('package', 'Basic')->get();
         return response()->json($orchestre , 200);    }
 
     public function addOrchestre(Request $request) {
