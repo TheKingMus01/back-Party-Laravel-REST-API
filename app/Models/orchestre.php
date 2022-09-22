@@ -9,5 +9,5 @@ class orchestre extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $fillable = ['photo', 'Price'];
+    protected $fillable = ['img', 'Price','package'];
 }
