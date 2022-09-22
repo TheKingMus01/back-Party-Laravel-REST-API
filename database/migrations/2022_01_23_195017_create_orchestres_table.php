@@ -15,7 +15,7 @@ class CreateOrchestresTable extends Migration
     {
         Schema::create('orchestres', function (Blueprint $table) {
             $table->id();
-            $table->string('photo');
+            $table->string('img');
             $table->integer('Price');
             $table->timestamps();
         });
